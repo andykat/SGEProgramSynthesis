@@ -1,0 +1,25 @@
+<code> ::= <code><statement>'\n'|<statement>'\n'
+<statement> ::= <assign>|<compound_stmt>
+<compound_stmt> ::= <if>
+<assign> ::= <bool_var>' = '<bool>|<int_assign>|<string_var>' = '<string>
+<number> ::= <number><num>|<num>
+<num> ::= '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
+<comp_op> ::= 'greater_than'|'less_than'|'=='|'greater_equal_than'|'less_equal_than'|'!='|'is'|'is not'
+<string_const_part> ::= <string_const_part><string_literal>|<string_literal>
+<bool> ::= <int>' '<comp_op>' '<int>
+<bool_var> ::= 'b0'|'b1'|'b2'
+<bool_op> ::= 'and'|'or'
+<bool_const> ::= 'True'|'False'
+<if> ::= 'if '<bool>':{:\n'<code>':}'|'if '<bool>':{:\n'<code>':}else:{:\n'<code>':}'
+<int> ::= <int_var>|'int('<number>'.0)'
+<int_var> ::= 'i0'|'i1'|'i2'|'in0'
+<int_assign> ::= <int_var>' = '<int>|<int_var>' '<arith_ops>'= '<int>
+<arith_ops> ::= '+'|'-'|'*'
+<int_arith_ops_protected> ::= 'divInt'|'mod'
+<arith_prefix> ::= '+'|'-'
+<string> ::= <string_const>
+<string_var> ::= 's0'|'s1'|'s2'|'res0'
+<string_slice> ::= <string>'['<int>':'<int>']'|<string>'[:'<int>']'|<string>'['<int>':]'
+<string_const> ::= '""'|"'small'"|"'large'"
+<string_literal> ::= ''|' '|'!'|'#'|'$'|'%'|'&'|'('|')'|'*'|'+'|','|'-'|'.'|'0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'|':'|';'|'greater_than'|'='|'less_than'|'?'|'@'|'A'|'B'|'C'|'D'|'E'|'F'|'G'|'H'|'I'|'J'|'K'|'L'|'M'|'N'|'O'|'P'|'Q'|'R'|'S'|'T'|'U'|'V'|'W'|'X'|'Y'|'Z'|'['|']'|'^'|'_'|'`'|'a'|'b'|'c'|'d'|'e'|'f'|'g'|'h'|'i'|'j'|'k'|'l'|'m'|'n'|'o'|'p'|'q'|'r'|'s'|'t'|'u'|'v'|'w'|'x'|'y'|'z'|'{'|'|'|'}'
+<blank> ::= ''

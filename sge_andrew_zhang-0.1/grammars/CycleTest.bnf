@@ -1,0 +1,7 @@
+<code> ::= <code><statement>'\n'|<statement>'\n'
+<statement> ::= <const_code>|<assign>
+<assign> ::= <var>' = '<const_int>|<var>' = '<var>|<code>
+<const_code> ::= 'res0 = 0'|'res0 = 1'
+<var> ::= 'a'|'b'|'res0'|'in0'
+<const_int> ::= '0'|'1'|'2'
+<blank> ::= ''

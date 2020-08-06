@@ -1,0 +1,16 @@
+<code> ::= <code><statement>'\n'|<statement>'\n'
+<statement> ::= <assign>|<compound_stmt>
+<compound_stmt> ::= <if>
+<assign> ::= <bool_var>' = '<bool>|<int_assign>|<string_var>' = '<string>
+<comp_op> ::= 'greater_than'|'less_than'|'=='|'greater_equal_than'|'less_equal_than'|'!='|'is'|'is not'
+<bool> ::= <int>' '<comp_op>' '<int>
+<bool_var> ::= 'b0'|'b1'|'b2'
+<bool_op> ::= 'and'|'or'
+<bool_const> ::= 'True'|'False'
+<if> ::= 'if '<bool>':{:\n'<code>':}'|'if '<bool>':{:\n'<code>':}else:{:\n'<code>':}'
+<int> ::= <int_var>|'0'|'1000'|'2000'
+<int_var> ::= 'i0'|'i1'|'i2'|'in0'
+<int_assign> ::= <int_var>' = '<int>
+<string> ::= ""|"'small'"|"'large'"
+<string_var> ::= 'res0'
+<blank> ::= ''
